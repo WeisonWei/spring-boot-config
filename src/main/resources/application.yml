@@ -1,0 +1,27 @@
+management:
+  endpoints.web:
+    base-path: /management
+    exposure.include: '*'
+  server.port: 9090
+
+server:
+  connection-timeout: 30000ms
+  port: 8080
+  servlet.context-path: /
+
+logging:
+  path: ./
+  file: sc.log
+  #max-size: 10M
+  #max-history: 1
+  level:
+    com:
+      wxx:
+        modules:
+          mapper: debug
+
+master:
+  name: EvanDevyml
+  sex: nv
+  subject: chi
+
